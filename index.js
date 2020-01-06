@@ -46,7 +46,7 @@ function viewCart()
         listA = `${cart[i]["itemName"]} at $${cart[i]["itemPrice"]}.`;
       }
       
-      return `In your cart, you have ${listA}, and ${cart[cart.length]["itemName"]} at ${}.`;
+      return `In your cart, you have ${listA}, and ${cart[cart.length]["itemName"]} at ${cart[cart.length]["itemPrice"]}.`;
 
       
     }
