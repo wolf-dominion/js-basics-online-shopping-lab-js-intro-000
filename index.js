@@ -43,11 +43,10 @@ function viewCart()
     {
       for(i = 0; i < cart.length-1; i++)
       {
-        listA = `${cart[i]["itemName"]} at $${cart[i]["itemPrice"]}.`;
+        listA += `${cart[i]["itemName"]} at $${cart[i]["itemPrice"]}.`;
       }
       
       return `In your cart, you have ${listA}, and ${cart[cart.length]["itemName"]} at ${cart[cart.length]["itemPrice"]}.`;
-
       
     }
     else
