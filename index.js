@@ -31,9 +31,9 @@ function viewCart()
     if (cart.length === 1) // this loop is only for if there is one item in the array 
     {
         for(var i = 0; i < cart.length; i++)
-      {
-        listA = `${cart[i]["itemName"]} at $${cart[i]["itemPrice"]}.`;
-      }
+        {
+          listA = `${cart[i]["itemName"]} at $${cart[i]["itemPrice"]}.`;
+        }
     
       return `In your cart, you have ${listA}.`;
       
@@ -45,7 +45,10 @@ function viewCart()
       {
         listA = `${cart[i]["itemName"]} at $${cart[i]["itemPrice"]}.`;
       }
-    
+      
+      return `In your cart, you have ${listA}, and ${cart[cart.length]["itemName"]} at ${}.`;
+
+      
     }
     else
     {
