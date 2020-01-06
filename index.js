@@ -28,7 +28,7 @@ function viewCart()
 {
     var listA = "";
     
-    if (cart.length === 1) // this loop is only for if there is one item in the array 
+    if (cart.length === 1) // this loop is for a one-item cart
     {
         for(var i = 0; i < cart.length; i++)
         {
@@ -39,7 +39,7 @@ function viewCart()
       
     }
     
-    if (cart.length > 1) // returns the last item with an and
+    if (cart.length > 1) // this loop is for a 3 or more item cart
     {
       for(i = 0; i < cart.length-1; i++)
       {
